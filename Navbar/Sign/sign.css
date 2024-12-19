@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+.Signcontainer{
+    display: flex;
+    justify-content: center;
+}
+.form-container {
+    background-color: white;
+    margin: 8rem 0;
+    padding: 20px 20px 20px 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.form-container h2 {
+    margin-bottom: 20px;
+}
+.form-container input {
+    width: 96.5%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.form-container input.error {
+    border: 2px solid red; /* Red border for invalid fields */
+}
+#signUpForm button {
+    width: 50%;
+    margin-left: 25%;
+    padding: 15px 10px;
+    background-color: purple;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#signUpForm button:hover {
+    background-color: rgb(71, 6, 71);
+    width: 30%;
+    margin-left: 35%;
+    border-radius: 50px;
+}
+.verification-field button{
+    width: 100%;
+    padding: 10px;
+    background-color: purple;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.verification-field input{
+    width: 92.5%;
+}
+.verification-field button:hover {
+    background-color: rgb(71, 6, 71);
+}
+.login-button button{
+    width: 100%;
+    padding: 10px;
+    background-color: purple;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.login-button button:hover {
+    background-color: rgb(71, 6, 71);
+}
+.error-message {
+    color: red;
+    display: none; /* Initially hidden */
+}
+.verification-field, .login-button {
+    display: none; /* Initially hidden */
+}
+#displayCode {
+    color: green;
+    font-weight: bold;
+}
+input[type="email"],textarea{
+    border: 1px solid grey;
+    outline: none;
+    transition: border-color 0.3s;
+    padding-left: .5rem;
+}
+input[type="email"]:focus, textarea:focus {
+    border: 1px solid;
+    border-color: purple;
+    color: black;
+    opacity: 10;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+input[type="password"],textarea{
+    border: 1px solid grey;
+    outline: none;
+    transition: border-color 0.3s;
+    padding-left: .5rem;
+}
+input[type="password"]:focus, textarea:focus {
+    border: 1px solid;
+    border-color: purple;
+    color: black;
+    opacity: 10;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+.sub:hover{
+    cursor: pointer;
+}
+.sub:focus{
+    cursor: not-allowed;
+}
+.neli{
+    display: block;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.al-have{
+    color: purple;
+    text-decoration: none;
+    position: relative;
+}
+.al-have::after{
+    content: "";
+    height: 2px;
+    width: 0;
+    background: purple;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: all 300ms ease;
+}
+.al-have:hover::after{
+    width: 100%;
+
+}

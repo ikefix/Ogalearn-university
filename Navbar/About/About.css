@@ -1,0 +1,104 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/* FOR NAVBAR EFFECT */
+#navbar.scrolled {
+    background: linear-gradient(45deg, rgb(255, 166, 0) 0%, rgb(133, 2, 133)); /* Change to green when scrolled */
+    transition:0.5s;
+}
+
+
+
+/* FOR HERO */
+.hero{
+    padding-top: 5rem;
+}
+.hero-text{
+    text-align: center;
+}
+.hero-text p{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding-bottom: 1rem;
+    font-weight: bold;
+}
+.hero-text-top{
+    position: absolute;
+    color: white;
+    padding: 0 3rem;
+    margin-top: -14rem;
+}
+.hero-text-top h2{
+    text-decoration: underline 2px purple;
+    padding-bottom: 1rem;
+}
+.vid{
+    height: 70vh;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.comy{
+    padding: .7rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid purple;
+    border-radius: 5px;
+    transition: 0.8s;
+    color: white;
+}
+.comy:hover{
+    background-color: purple;
+    cursor: pointer;
+}
+
+
+
+
+
+/* FOR PARTNER */
+.partner-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 0 4rem;
+}
+
+
+/* FOR BOD TEXT */
+.bid-text{
+    background-color: purple;
+    color: white;
+}
+.bid-text div{
+    text-align: center;
+    padding: 3rem 0;
+}
+.bid-text div p{
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2rem;
+}
+
+
+
+
+/* FOR STORY */
+.story-content{
+    padding: 3rem 3rem;
+    display: flex;
+    gap: 6rem;
+}
+.story-text h3{
+    padding: .6rem 0;
+}
+.story-text p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.stor-text-img p{
+    font-size: .72rem;
+}

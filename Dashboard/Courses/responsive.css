@@ -1,0 +1,77 @@
+@media screen and (max-width: 767px){
+    aside{
+        width: 14rem;
+        z-index: 3;
+        display: none;
+        left: -100%;
+        animation: showMenu 600ms ease forwards;
+    }
+
+    #togglebutton{
+        display: inline-block;
+        font-size: 2.5rem;
+        background-color: white;
+        width: 100%;
+        padding: .7rem 0;
+    }
+
+    #toggleBtn{
+        display: inline-block;
+        font-size: 2rem;
+    }
+
+    @keyframes showMenu {
+        to{
+            left: 0;
+        }
+    }
+
+    aside .logo{
+        margin-left: .1rem;
+    }
+
+    aside .logo h2{
+        display: inline;
+        font-size: 1.2rem;
+    }
+
+    aside #nav h3{
+        display: inline;
+    }
+
+    aside #nav i{
+        width: 1rem;
+    }
+
+    aside #nav a{
+        width: 100%;
+        height: 3.5rem;
+    }
+
+
+
+
+    .course-container{
+        padding-left: 0rem;
+        width: 100%;
+    }
+
+    .container{
+        display: grid;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        gap: 1.8rem;
+        grid-template-columns:98% 0rem;
+    }
+
+    .course-list{
+        justify-content: center;
+    }
+
+    .course-box{
+        margin-left: .6rem;
+        width: 100%;
+    }
+    
+}

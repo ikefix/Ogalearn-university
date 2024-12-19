@@ -1,0 +1,31 @@
+@media (max-width: 767px){
+    /* FOR HERO */
+    .hero-text-top{
+        padding: 0 1rem;
+        margin-top: -21rem;
+    }
+    .hero-text p{
+        font-size: 1.3rem;
+    }
+
+
+
+
+    /* FOR PARTNER */
+    .partner-content{
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem 1rem 1rem 1rem;
+    }
+    .partner-image img{
+        width: 100%;
+    }
+
+
+    /* FOR STORY */
+    .story-content{
+        flex-direction: column;
+        padding: 3rem 1rem;
+        gap: 3rem;
+    }
+}

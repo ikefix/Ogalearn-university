@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    background-color: #F0F2F5;
+}
+.log{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    padding-top: 15rem;
+    margin-bottom: 5rem;
+}
+.form-container {
+    background-color: white;
+    padding: 20px;
+    width: 28%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.form-container h2 {
+    margin-bottom: 20px;
+}
+.step-1 input{
+    width: 100%;
+}
+.password-field{
+    width: auto;
+}
+.password-field input{
+    width: 100%;
+}
+.form-container input {
+    /* width: 100%; */
+    padding: 15px 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.form-container .pot1 {
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: purple;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form-container .pot1:hover {
+    background-color: rgb(71, 6, 71);
+    cursor: pointer;
+}
+.form-container .pot1:focus{
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+.form-container .pot2 {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 15px 10px;
+    background-color: purple;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form-container .pot2:hover {
+    background-color: rgb(71, 6, 71);
+    cursor: pointer;
+}
+.form-container .pot2:focus{
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+.password-field {
+    display: none;
+}
+.text-container h1{
+    color: purple;
+    font-weight: bold;
+    font-size: 3rem;
+    font-style: italic;
+}
+.text-container {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* Ensure the text-container allows its children to align properly */
+}
+
+.text-container p {
+    width: 100%; /* or any width that suits your design */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type="email"],textarea{
+    border: 1px solid grey;
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.3s;
+    padding-left: .5rem;
+}
+input[type="email"]:focus, textarea:focus {
+    border: 1px solid;
+    border-color: purple;
+    color: black;
+    opacity: 10;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+input[type="password"],textarea{
+    border: 1px solid grey;
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.3s;
+    padding-left: .5rem;
+}
+input[type="password"]:focus, textarea:focus {
+    border: 1px solid;
+    border-color: purple;
+    color: black;
+    opacity: 10;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+.create{
+    padding-top: .7rem;
+    text-align: center;
+
+}
+.create-text button{
+    padding: .9rem 1rem;
+    width: 70%;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: orange;
+    border: none;
+    border-radius: 10px;
+}
+.create-text button:hover{
+    cursor: pointer;
+}
+.otitlo{
+    margin-bottom: .8rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: purple;
+    font-size: 1rem;
+}
+.error-message {
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    display: none; /* Error message initially hidden */
+}
+.showa{
+    display: flex;
+    padding: .5rem 0;
+}
+.showa input{
+    width: 5%;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+.showa span{
+    margin-left: .5rem;
+    font-size: 1.1rem;
+}
+
+.sip-up{
+    position: relative;
+}
+.sip-up{
+    color: purple;
+}
+.sip-up::after{
+    content: "";
+    height: 3px;
+    width: 0;
+    background: purple;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: all 300ms ease;
+}
+.sip-up:hover::after{
+    width: 100%;
+
+}
+.dont{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.dont2{
+    display: inline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+    .text-container{
+        width: 100%;
+        margin-left: .1rem;
+    }
+    .log{
+        flex-direction: column;
+        gap: 3rem;
+        padding: 0 1rem;
+        margin-top: 15rem;
+    }
+    .text-container h1{
+        font-size: 2rem;
+    }
+    .form-container {
+        padding: 20px;
+        width: 100%;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+}

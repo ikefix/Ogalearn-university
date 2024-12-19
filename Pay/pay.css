@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the country dropdown */
+.countryCodeSelect {
+    padding: 8px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style to show only the code after selection */
+.countryCodeSelect.codeOnly {
+    text-align: left;
+    font-weight: bold;
+}
+
+
+
+select{
+    cursor: pointer;
+}
+
+option{
+    cursor: pointer;
+}
+
+body{
+    background-color: rgb(212, 120, 212);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form{
+    margin-bottom: 1rem;
+    height: auto;
+}
+
+.payment .payButton {
+    cursor: not-allowed;
+    transition: 0.5s;
+}
+
+#countryCode{
+    width: 20%;
+    height: 5.9vh;
+    border-radius: 5px;
+    border: none;
+    background: rgb(228, 221, 221);
+    margin-bottom: 0;
+    border-bottom: 1px solid gray;
+}
+
+.phoneInput{
+    display: flex;
+    padding-bottom: .5rem;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.phoneInput input{
+    width: 100%;
+}
+
+.payment{
+    width: 600px;
+    height: 50px;
+    top: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 4rem auto 3rem auto;
+    background-color: white;
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.payment .payTitle{
+    font-size: 20px;
+    color: gray;
+    padding-bottom: .7rem;
+    padding-top: .7rem;
+}
+
+.payment .payInput{
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    /* width: 100%; */
+    background-color: rgb(228, 221, 221);
+    border: none;
+}
+
+.payment input[type="text"],textarea{
+    border: none;
+    border-bottom: 1px solid gray;
+    outline: none;
+    transition: border-color 0.7s;
+    padding-left: .5rem;
+}
+
+.payment input[type="number"],textarea{
+    border: none;
+    border-bottom: 1px solid gray;
+    outline: none;
+    transition: border-color 0.7s;
+    padding-left: .5rem;
+}
+
+.payment input[type="email"],textarea{
+    border: none;
+    border-bottom: 1px solid gray;
+    outline: none;
+    transition: border-color 0.7s;
+    padding-left: .5rem;
+}
+
+.payment input[type="text"]:focus, textarea:focus {
+    border: 1px solid;
+    border-color: purple;
+    color: black;
+    opacity: 10;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+.payment input[type="number"]:focus, textarea:focus {
+    border: 1px solid;
+    border-color: purple;
+    color: black;
+    opacity: 10;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+.payment input[type="email"]:focus, textarea:focus {
+    border: 1px solid;
+    border-color: purple;
+    color: black;
+    opacity: 10;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+.payment input[type="password"],textarea{
+    border: none;
+    border-bottom: 1px solid gray;
+    outline: none;
+    transition: border-color 0.7s;
+    padding-left: .5rem;
+}
+
+.payment input[type="password"]:focus, textarea:focus {
+    border: 1px solid;
+    border-color: rgb(22, 22, 199);
+    color: black;
+    opacity: 10;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+label{
+    font-size: 16px;
+    display: block;
+    font-weight: 400;
+}
+
+.payment .cardIcons{
+    display: flex;
+}
+
+.payment .cardInfo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment .cardInfo .sm{
+    width: 20%;
+}
+
+.payment .payButton{
+    position: absolute;
+    height: 40px;
+    background-color: rgb(228, 221, 228);
+    bottom: 0;
+    border: none;
+    border-bottom: 1px solid rgb(160, 154, 154);
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1rem;
+    left: 0;
+    color: white;
+    transition: .7s;
+}
+
+.payment .payButton:hover{
+    border: none;
+    cursor: pointer;
+}
+
+.payment .close{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 10px;
+    display: flex;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    top: 25px;
+    transition: .7s;
+}
+
+.payment .close:hover{
+    border-radius: 50%;
+    background-color: #222;
+    color: white;
+}
+
+
+
+.paymentPlan {
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.paymentPlan h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.paymentPlan label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.paymentPlan input[type="radio"] {
+    margin-right: 10px;
+}
+
+

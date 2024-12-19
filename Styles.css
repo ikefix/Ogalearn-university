@@ -1,0 +1,1121 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+width:100%;
+overflow-x: hidden;
+}
+
+::selection{
+    background-color: purple;
+    color: white;
+}
+li{
+    list-style-type: none;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* FOR NAVBAR */
+/* Styles when scrolled past the threshold */
+#navbar.scrolled {
+    background: linear-gradient(45deg, rgb(255, 166, 0) 0%, rgb(133, 2, 133)); /* Change to green when scrolled */
+    transition:0.5s;
+}
+  
+#navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background: linear-gradient(45deg, rgb(128, 0, 128) 0%, rgb(255, 165, 0));
+}
+
+.divine{
+    display: none;
+}
+
+.navbar-content{
+    display: flex;
+    justify-content: center;
+    gap: 12rem;
+    padding: 1rem 2rem;
+}
+.nav-wrap-con{
+    display: flex;
+    gap: 8rem;
+}
+.nav-img{
+    padding-top: .5rem;
+}
+.wrap-con{
+    display: flex;
+    padding-top: .8rem;
+    gap: 3rem;
+}
+.wrap-con a{
+    font-size: 1.2rem;
+color:white;
+}
+.ita{
+    font-size: 2rem;
+    color: white;
+}
+
+.nav-img button{
+    display: none;
+}
+.ita:hover{
+    cursor: pointer;
+}
+.boubou{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.boubou:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.dropdown-menu {
+    display: block;
+    position: absolute;
+    background-color: #F0F2F5;
+    min-width: 160px;
+    margin-left: -2rem;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s ease; /* Slower transitions for dropdown menu */
+}
+.dropdown-men {
+    display: block;
+    position: absolute;
+    background-color: #F0F2F5;
+    min-width: 160px;
+    margin-left: -2rem;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s ease; /* Slower transitions for dropdown menu */
+}
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+.dropdown:hover .dropdown-men {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+.nav-item {
+    position: relative;
+}
+.dropdown-menu a:hover {
+    background-color: purple;
+    color: white;
+    padding: 10px 6px;
+    border-radius: 5px;
+}
+
+.dropdown-men a:hover {
+    background-color: purple;
+    color: white;
+    padding: 10px 6px;
+    border-radius: 5px;
+}
+      
+.nav-item .infy {
+    display: block;
+    color: purple;
+    padding: 14px 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.5s ease; /* Slower transition for background color */
+}
+#logs{
+    display: flex;
+    gap: 1rem;
+}
+#log-1{
+    padding: .5rem 1rem;
+    background: linear-gradient(45deg,rgb(128, 0, 128) 5%, rgb(255, 165, 0));
+    border: 2px solid rgb(128, 0, 128);
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: 0.9s;
+}
+#log-1:hover{
+    background: linear-gradient(45deg,rgb(255, 165, 0) 5%, rgb(128, 0, 128));
+    border: 2px solid rgb(255, 165, 0);
+}
+#log-1:hover{
+    cursor: pointer;
+}
+#log-2:hover{
+    cursor: pointer;
+}
+#log-2{
+    padding: .5rem 1rem;
+    background: linear-gradient(45deg,rgb(255, 165, 0) 5%, rgb(128, 0, 128));
+    border: 2px solid rgb(255, 165, 0);
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+}
+#log-2:hover{
+    background: linear-gradient(45deg,rgb(128, 0, 128) 5%, rgb(255, 165, 0));
+}
+
+
+/* FOR HERO */
+.hetop{
+    padding-bottom: 1rem;
+}
+.hetop h2{
+    font-size: 2.5rem;
+    white-space: nowrap;
+}
+.hero-content {
+    padding-top: .1rem;
+    background-color: #E5F3EA;
+}
+.typewriter{
+    width: 150%;
+}
+.container {
+    display: flex;
+    padding: 5rem 7rem 9rem 7rem;
+    align-items: center;
+    margin-top: 5rem;
+    gap: 1rem;
+}
+.des{
+    padding-bottom: 1rem;
+}
+.retype {
+    /* border-right: 2px solid purple; */
+    line-height: 2rem;
+    /* white-space: nowrap; */
+    font-size: 2rem;
+    overflow: hidden; /* Ensures the text is hidden while typing */
+    display: inline-block; /* Make sure it does not wrap */
+}
+.yort{
+    display: flex;
+    gap: 2rem;
+}
+.type-new{
+    background-color: purple;
+    padding: .8rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: white;
+    transition: 0.7s;
+}
+.type-new:hover{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid purple;
+}
+.get-new{
+    background-color: orange;
+    padding: .8rem 1rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    color: white;
+    transition: 0.7s;
+}
+.get-new:hover{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid orange;
+}
+.shot2 img {
+    width: 100%; /* Adjust as needed */
+    height: auto;
+    border-radius: 10px;
+    justify-content: right;
+    margin-left: 20px;
+    transition: opacity 0.5s ease;
+}
+
+
+
+
+
+
+
+/* FOR BODY */
+ .body{
+    background: url(assets/service-bg-left.png);
+}
+.body-content{
+    padding: 5rem 6rem;
+    display: flex;
+    gap: 3rem;
+}
+.bod-img{
+    padding-top: 2rem;
+    opacity: 0;
+    transform: translateY(100px); /* Slide from the bottom */
+    transition: opacity 6s ease-out, transform 6s ease-out;
+}
+.bod-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+.bod-text{
+    padding-top: 2rem;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(-100px); /* Slide from the top */
+    transition: opacity 6s ease-out, transform 6s ease-out;
+}
+.contan1 h3{
+    text-decoration: underline 2px purple;
+}
+.contan2{
+    width: 100%;
+    padding: 1rem 0;
+}
+.contan2 h1{
+    font-size: 3rem;
+    line-height: 3rem;
+}
+.contan3{
+    width: 85%;
+}
+.read{
+    padding: 2rem 0;
+}
+.read button{
+    padding: 1rem 1.5rem;
+    font-weight: 700;
+    font-size: 1rem;
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+.read button:hover{
+    cursor: pointer;
+} 
+.body-content {
+    padding: 5rem 6rem;
+    display: flex;
+    gap: 3rem;
+}
+
+/* When visible, trigger the animation */
+.visible {
+    opacity: 1;
+    transform: translateY(0); /* Back to original position */
+}
+
+
+
+
+
+
+
+/* FOR ABOUT */
+
+.about-content.visible {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Slide to original position */
+}
+
+.about-img.visible {
+    opacity: 1; /* Fade in */
+    transform: translateX(0); /* Slide to original position */
+}
+
+
+.about-text.visible {
+    opacity: 1; /* Fade in */
+    transform: translateX(0); /* Slide to original position */
+}
+
+.about{
+    background-color: #F0F2F5;
+}
+
+.about-content{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0;
+    padding: 5rem 6rem;
+    opacity: 0; /* Start hidden */
+    transform: translateY(20px); /* Move down slightly */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Transition for the effect */
+}
+.about-img {
+    opacity: 0; /* Start hidden */
+    transform: translateX(100px); /* Move in from the right */
+    transition: opacity 4s ease-out, transform 6s ease-out; /* Transition for the effect */
+}
+.about-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+.about-text{
+    width: 100%;
+    opacity: 0; /* Start hidden */
+    transform: translateX(-100px); /* Move in from the left */
+    transition: opacity 4s ease-out, transform 6s ease-out; /* Transition for the effect */
+}
+.hold1 h3{
+    text-decoration: underline 2px purple;
+}
+.hold2 h1{
+    line-height: 3rem;
+    width: 70%;
+    font-size: 2.5rem;
+}
+.about-button{
+    padding-top: 3rem;
+    display: flex;
+    gap: 1rem;
+}
+.but1 button{
+    padding: .6rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: purple;
+    color: white;
+    font-size: 1rem;
+    font-weight: 550;
+    cursor: pointer;
+}
+.but2 button{
+    padding: .6rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+    font-weight: 550;
+    transition: 0.5s;
+}
+.but2 button:hover{
+    background-color: purple;
+    color: white;
+    cursor: pointer;
+}
+.but3 button{
+    padding: .6rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+    font-weight: 550;
+    transition: 0.5s;
+}
+.but3 button:hover{
+    background-color: purple;
+    color: white;
+    cursor: pointer;
+}
+.but4{
+    padding-top: 3rem;
+}
+.but4 p{
+    width: 70%;
+}
+.explore{
+    padding-top: 2rem;
+}
+.explore button{
+    padding: .7rem 1.2rem;
+    color: white;
+    background-color: purple;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    transition: 0.9s ease-in;
+}
+.explore button:hover{
+    cursor: pointer;
+    background-color: inherit;
+    color: purple;
+    border-radius: 10px;
+    border: 1px solid purple;
+    transform: scale(1.1);
+}
+
+
+
+
+/* FOr CHOOSE */
+/* .choose-content.visible .about-img3 img {
+    animation: grow 4s ease forwards;
+}
+
+.choose-content.visible .rea-con {
+    animation: spin 4s ease forwards;
+    opacity: 1; Make it visible
+}
+@keyframes grow {
+    0% {
+        transform: scale(0.5); Start smaller
+        opacity: 0; Start invisible
+    }
+    100% {
+        transform: scale(1); Original size
+        opacity: 1; Fully visible
+    }
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg); Start rotation
+        opacity: 0; Start invisible
+    }
+    100% {
+        transform: rotate(360deg); Full rotation
+        opacity: 1; Fully visible
+    }
+} */
+.choose{
+    background: url(assets/service-bg-left.png);
+}
+.choose-content{
+    padding: 5rem 5rem;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 5rem;
+}
+.numb .one{
+    margin-top: 12rem;
+    position: absolute;
+}
+.one button{
+    padding: .8rem .8rem .8rem .8rem;
+    border: 1px solid purple;
+    width: 3.3rem;
+    background-color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    align-items: center;
+    border-radius: 100px;
+}
+.numb .two{
+    margin-top: 26rem;
+    position: absolute;
+}
+.two button{
+    padding: .8rem .8rem .8rem .8rem;
+    border: 1px solid purple;
+    width: 3.3rem;
+    background-color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    align-items: center;
+    border-radius: 100px;
+}
+.about-us{
+    text-decoration: underline 2px purple;
+}
+.trup{
+    font-size: 2.3rem;
+    line-height: 2.5rem;
+    padding: 1rem 0 2rem 0;
+    width: 90%;
+  }
+  .we{
+    margin: 0 4rem;
+    margin-bottom: 3rem;
+  }
+  .spend{
+    font-size: 1rem;
+    width: 22rem;
+  }
+  .otp-chid{
+    margin: 0 4rem;
+    margin-top: 3rem;
+  }
+  .dive{
+    border: dotted #F0F2F5 2px;
+    width: 75%;
+  }
+  .otp{
+    font-size: 1rem;
+    width: 24rem;
+  }
+.rea-con{
+    /* width: 100%; */
+    display: inline-block;
+    /* animation: spin 1s ease forwards; Animation for text container spin */
+    /* opacity: 0; Start invisible */
+}
+.about-img3 img{
+    width: 100%;
+    border-radius: 10px;
+    /* animation: grow 0.8s ease forwards; Animation for image growth */
+}
+.learn{
+    padding-top: 2rem;
+    padding-left: 4rem;
+}
+.learn button{
+    padding: .7rem 1.2rem;
+    color: white;
+    background-color: darkmagenta;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    transition: 0.9s ease-in;
+}
+.learn button:hover{
+    cursor: pointer;
+    background-color: orange;
+    color: purple;
+    font-weight: bold;
+    border-radius: 10px;
+    transform: scale(1.1);
+}
+
+
+
+
+
+/* FOR COURSES */
+.course-content{
+    background-color: #F0F2F5;
+    padding: 3rem 0 5rem 0;
+}
+.center{
+    text-align: center;
+    padding: 1rem 0;
+}
+.course-head{
+    text-decoration: underline 2px purple;
+}
+.cou-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 0 6rem;
+}
+.cou-men-flex{
+    display: flex;
+    gap: 3rem;
+    padding: 0 3rem;
+}
+.course-topic{
+    text-align: center;
+}
+.cou-menu-con{
+    background-color: white;
+    border: 1px solid #999;
+    border-radius: 10px;
+    padding: 1.5rem;
+    width: 100%;
+    height: auto;
+    transition: 0.5s;
+}
+.cou-menu-con:hover{
+    cursor: pointer;
+    transform: scale(0.9);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.cou-menu-cen{
+    background-color: white;
+    border: 1px solid #999;
+    border-radius: 10px;
+    padding: 1.5rem;
+    width: 100%;
+    height: auto;
+    transition: 0.5s;
+}
+.cou-menu-cen:hover{
+    cursor: pointer;
+    transform: scale(0.9);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.cou-menu-can{
+    background-color: white;
+    border: 1px solid #999;
+    border-radius: 10px;
+    padding: 1.5rem;
+    width: 100%;
+    height: auto;
+    transition: 0.5s;
+}
+.cou-menu-can:hover{
+    cursor: pointer;
+    transform: scale(0.9);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+#comen-more{
+    display: none;
+    flex-direction: column;
+    gap: 3rem;
+}
+.must-work{
+    display: flex;
+    gap: 3rem;
+    padding: 0 6rem;
+}
+.topy{
+    padding-bottom: .5rem;
+    font-size: 1.3rem;
+    color: purple;
+}
+.noty{
+    padding-bottom: .5rem;
+    line-height: 1.5rem;
+}
+.offer{
+    font-size: 2.3rem;
+    line-height: 2.5rem;
+    padding: 1rem 0 2rem 0;
+    width: 100%;
+}
+
+.more-course{
+    padding-top: 3rem;
+    padding-left: 11.9rem;
+    display: flex;
+    gap: 1rem;
+}
+.more-course .shomo button{
+    background-color: purple;
+    border: none;
+    border-radius: 5px;
+    padding: .5rem 2rem;
+    font-size: .8rem;
+    font-weight: bold;
+    color: white;
+    transition: 0.5s;
+}
+.more-course .shomo button:hover{
+    cursor: pointer;
+}
+
+
+
+
+/* FOR JOBS */
+.job-content {
+    background-color: #F0F2F5;
+    padding: 3rem 0 5rem 0;
+}
+
+.job-img {
+    background: linear-gradient(45deg, rgb(253, 165, 1) 0%, rgb(134, 3, 134));
+    border: 1px solid #999;
+    border-radius: 10px;
+    padding: .5rem;
+    width: 30%;
+    height: auto; /* Adjust height if needed */
+    overflow: hidden; /* Ensure the image does not overflow its container */
+    transition: 0.5s;
+}
+.job-img:hover{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+    margin-top: 1.5rem;
+}
+.job-img img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* Ensure the image covers the container */
+}
+.job-img img:hover{
+    cursor: pointer;
+}
+
+
+.popup-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 900px; /* Adjust width as needed */
+    height: 600px; /* Adjust height as needed */
+    background: linear-gradient(45deg, rgb(102, 1, 102) 0%, rgb(131, 131, 0));
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    z-index: 1001;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease, visibility 1s ease;
+}
+.popo{
+    display: flex;
+    gap: 2rem;
+}
+.popo-con1{
+    padding-top: 1rem;
+}
+.popo-con2{
+    width: 50%;
+    padding-top: 1rem;
+}
+.popo-con2 h1{
+    padding-bottom: 1rem;
+}
+.popo-con2 h2{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.popup-content.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+}
+
+.blur {
+    filter: blur(8px);
+}
+
+.popup-navigation {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    z-index: 1002;
+    display: none; /* Hidden by default */
+    justify-content: space-between;
+}
+.popup-navigation .next-btn{
+    margin-left: 50rem;
+}
+.pop-shift{
+    border-radius: 10px;
+    width: 100%;
+}
+
+.prev-btn, .next-btn {
+    background-color: purple;
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 10px 10px 13px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.9s;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background-color: orange;
+}
+
+.prev-btn {
+    position: absolute;
+    left: -510px; /* Adjust based on pop-up width */
+}
+
+.next-btn {
+    position: absolute;
+    right: -510px; /* Adjust based on pop-up width */
+}
+
+.cancel-btn {
+    margin-top: -495px;
+    margin-left: 820px;
+    position: absolute;
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    font-size: 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.7s;
+}
+.clop{
+    position: absolute;
+}
+
+.cancel-btn:hover {
+    /* background-color: darkred; */
+    background-color: orange;
+    margin-left: 815px;
+    border-radius: 5px;
+    border: 2px solid purple;
+}
+.go-flex1{
+    display: flex;
+    gap: 2rem;
+}
+.go-flex1 div{
+    display: inline-block;
+    width: auto;
+}
+.go-flex2{
+    display: flex;
+    gap: 2rem;
+}
+.go-flex2 div{
+    display: inline-block;
+    width: auto;
+}
+.hob-flex{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+
+/* FOR SERVICE */
+.services{
+    background: url(assets/service-bg-left.png);
+}
+.services-content{
+    padding: 3rem 0;
+}
+.service-tent1{
+    text-align: center;
+    padding: 2rem 0;
+}
+.service-tent1 h3{
+    text-decoration: underline 2px purple;
+    padding-bottom: 1rem;
+}
+.service-tent1 h2{
+    font-size: 2rem;
+}
+.ser-tent{
+    display: flex;
+    padding: 1rem 6rem;
+    gap: 2rem;
+}
+.service-tent-con{
+    background-color: white;
+    border: 1px solid #999;
+    border-radius: 10px;
+    padding: 1.5rem;
+    width: 100%;
+    height: 50vh;
+    transition: 0.5s;
+}
+.service-topic{
+    text-align: center;
+}
+.service-button{
+    padding-top: 2rem;
+    padding-left: 6.5rem;
+}
+.service-button button{
+    padding: .7rem 1rem;
+    border: 1px solid purple;
+    color: purple;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 1s;
+}
+.service-button button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: purple;
+    color: white;
+}
+
+
+
+
+
+
+/* FOR JOIN */
+
+
+.join-content{
+    background-color: white;
+    padding: 1rem 0 3rem 0;
+}
+.join-tent1{
+    text-align: center;
+    padding: 2rem 0 4rem 0;
+}
+.join-tent1 h3{
+    text-decoration: underline 2px purple;
+    padding-bottom: 1rem;
+}
+.join-tent1 h2{
+    font-size: 2rem;
+}
+
+.join-tent2{
+    background-color: #F0F2F5;
+    border-radius: 10px;
+    display: flex;
+    margin: 2rem 2rem;
+}
+.teps{
+    padding: 1rem 0 1rem 0;
+}
+.teps button{
+    padding: 2.1rem 1rem 2.1rem 1rem;
+    width: 6rem;
+    background-color: white;
+    color: purple;
+    border: none;
+    text-align: center;
+    font-size: 2.5rem;
+    align-items: center;
+    border-radius: 100px;
+}
+.join-con{
+    width: 18%;
+    text-align: center;
+    align-items: center;
+    padding: 2rem 0;
+    border-radius: 10px;
+    margin-left:4.5rem;
+    cursor: pointer;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Start from slightly below */
+    transition: opacity 1s ease, transform 1s ease; /* Transition for the effect */
+}
+.join-con.visible {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Reset position */
+}
+.join-con h3{
+    padding-bottom: 1rem;
+}
+.join-con button{
+    transition: 0.8s;
+}
+.join-con:hover button{
+    background-color: purple;
+    color: white;
+}
+.join-text{
+    position: absolute;
+    margin-left: 13rem;
+    margin-top: 1rem;
+}
+
+
+
+
+
+
+/* FOR FOOTER */
+.footer{
+    background: linear-gradient(45deg,rgb(255, 165, 0) 5%, rgb(121, 4, 121));
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.footer-content{
+    padding: 3rem 0;
+}
+.foot-hold{
+    display: flex;
+    padding: 0 5rem;
+    gap: 10rem;
+}
+.footer-show2{
+    display: flex;
+}
+.footer-show{
+    display: flex;
+    gap: 5rem;
+}
+.must-do{
+    display: flex;
+    gap: 5rem;
+}
+.footer-show h3{
+    padding-bottom: .5rem;
+    color: white;
+}
+.footer-show ul li a{
+    font-size: .8rem;
+    transition: 0.8s;
+    color: white;
+}
+.footer-show ul li a:hover{
+    color: aqua;
+}
+
+.footer-show2 input{
+    padding: 1.2rem .5rem;
+    width: 17vw;
+    height: 5vh;
+    border: 2px solid aqua;
+    border-radius: 5px;
+}
+.footer-show2 button{
+    margin-left: -1rem;
+    padding: 9px 1rem;
+    height: 6.6vh;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background:linear-gradient(45deg,  rgb(128, 0, 128) 30%, rgb(2, 255, 255));
+}
+
+input[type="text"],textarea{
+    outline: none;
+    transition: border-color 0.9s;
+    padding-left: .5rem;
+}
+input[type="text"]:focus, textarea:focus {
+    border: 2px solid;
+    border-color: orange;
+    color: black;
+    opacity: 10;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+.foot-text{
+    color: white;
+    display: flex;
+    gap: 30rem;
+    padding: 2rem 5rem 1rem 5rem;
+}
+.foot-text ul li a{
+    transition: 0.8s;
+    padding-right: .5rem;
+    font-size: .8rem;
+}
+.foot-text ul{
+    display: flex;
+    gap: .5rem;
+}
+.foot-text ul li a:hover{
+    color: aqua;
+    cursor: pointer;
+}

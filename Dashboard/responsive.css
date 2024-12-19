@@ -1,0 +1,207 @@
+:root{
+    --color-background:whitesmoke;
+    --color-hover:#333;
+    --color-white:white;
+    --color-dark:gray;
+    --color-icon:white;
+}
+/* MEDIA QUERIES */
+@media screen and (max-width: 1200px) {
+    .container{
+        /* width: 94%; */
+        grid-template-columns: auto 18rem;
+    }
+
+    aside{
+        width: 7%;
+    }
+
+    aside .logo h2{
+        display: none;
+    }
+
+    aside #nav h3{
+        display: none;
+    }
+
+    aside #nav i{
+        width: .5rem;
+    }
+
+    aside #nav a{
+        margin-left: 1rem;
+        height: 4rem;
+    }
+
+    aside #nav i:last-child{
+        position: relative;
+        margin-top: 1.8rem;
+    }
+
+    main{
+        padding-left: 6rem;
+    }
+
+    main .insights{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    main .recent-orders{
+        width: 94%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 2rem 0 0 5rem;
+    }
+
+    main .recent-orders table{
+        width: 85vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 767px) {
+    .container{
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+
+    aside{
+        width: 14rem;
+        z-index: 3;
+        display: none;
+        left: -100%;
+        animation: showMenu 600ms ease forwards;
+    }
+
+    @keyframes showMenu {
+        to{
+            left: 0;
+        }
+    }
+
+    aside .close #closebtn{
+        display: inline-block;
+    }
+
+    aside .logo{
+        margin-left: .1rem;
+    }
+
+    aside .logo h2{
+        display: inline;
+        font-size: 1.2rem;
+    }
+
+    aside #nav h3{
+        display: inline;
+    }
+
+    aside #nav i{
+        width: 1rem;
+    }
+
+    aside #nav a{
+        width: 100%;
+        height: 3.5rem;
+    }
+
+    main{
+        margin-top: 6rem;
+        padding: 0 .5rem;
+        height: auto;
+    }
+
+    main .insights{
+        padding-right: 0;
+    }
+
+    main table thead tr th:last-child,
+    main table thead tr th:first-child{
+        display: none;
+    }
+
+    main table tbody tr th:last-child,
+    main table tbody tr th:first-child{
+        display: none;
+    }
+
+    main table tbody tr td{
+        font-size: .8rem;
+    }
+
+    main .recent-orders{
+        position: relative;
+        margin: 1rem 0 0 0;
+        width: 100%;
+    }
+
+    main .recent-orders table{
+        width: 100%;
+        margin: 0;
+    }
+
+    .right{
+        width: 94%;
+        margin: 0 auto 2rem;
+    }
+
+    .right .recent-updates .updates{
+        margin-right: 0;
+    }
+
+    .right .sales-analytics{
+        margin-right: 0;
+    }
+
+    .right .top{
+        position: fixed;
+        justify-content: right;
+        top: 0;
+        left: 0;
+        align-items: center;
+        padding: 0 0.8rem;
+        height: 4.3rem;
+        background: var(--color-white);
+        width: 100%;
+        margin: 0;
+        z-index: 2;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .right .top .theme-toggler{
+        width: 3.8rem;
+        position: absolute;
+        left: 42%;
+    }
+
+    .right .top .theme-toggler i{
+        
+        font-size: 1rem;
+    }
+
+    .right .top button{
+        display: inline-block;
+        background: transparent;
+        cursor: pointer;
+        color: var(--color-hover);
+        position: absolute;
+        border: none;
+        outline: none;
+        left: 1rem;
+    }
+
+    .right .top button i{
+        font-size: 2.5rem;
+    }
+}

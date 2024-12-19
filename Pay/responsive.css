@@ -1,0 +1,17 @@
+@media (max-width: 767px) {
+    
+    .payment{
+        width: 96%;
+        height: 650px;
+        top: 0;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: 8rem .5rem 3rem .5rem;
+        background-color: white;
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+}

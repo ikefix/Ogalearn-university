@@ -1,0 +1,1 @@
+Failed verification attempt for email: omeks1223@gmail.com with token: 1c4649abeaffad7b2f9bb61730ec3ae0Failed verification attempt for email: omekeikechukwu878@yahoo.com with token: 0ba755c8308d5eb622756b3bd10da6bb

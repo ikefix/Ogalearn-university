@@ -1,0 +1,49 @@
+#togglebutton{
+    display: none;
+}
+
+#toggleBtn{
+    display: none;
+}
+
+.body{
+    padding-left: 14.5rem;
+}
+
+.blog-list { margin: 20px; }
+.blog-list { border: 1px solid grey; }
+.blog-list { box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); }
+.blog-list { padding: 1rem 0;}
+.blog-list { width: auto; }
+.blog-list { text-align: center; }
+.blog-list { border-radius: 10px; }
+.blog-list button{ margin-top: 10px; }
+.blog-list button{ font-size: 1rem; }
+.blog-list button{ padding: .5rem .8rem; }
+.blog-list button{ color: white; }
+.blog-list button{ background-color: purple; }
+.blog-list button{ border-radius: 10px; }
+.blog-list button{ cursor: pointer; }
+.blog-item { margin-bottom: 10px; }
+.blog-title { font-weight: bold; }
+
+
+.body{
+    padding-top: 1rem;
+}
+
+.bodyset{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bodyset button{
+    background-color: purple;
+    color: white;
+    font-size: 1rem;
+    margin-right: 2rem;
+    border-radius: 10px;
+    padding: .7rem .8rem;
+    cursor: pointer;
+}

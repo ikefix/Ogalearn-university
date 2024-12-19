@@ -1,0 +1,77 @@
+.body{
+    padding-left: 13rem;
+    padding-top: 2rem;
+}
+
+#togglebutton{
+    display: none;
+}
+
+#toggleBtn{
+    display: none;
+}
+
+.body .bodyContent .bodyContentTitle{
+    text-align: center;
+}
+
+.body .bodyContent .bodyContentTitle p{
+    width: 98%;
+}
+
+.body .bodyContent .bodyContentLinks{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .body .bodyContent .bodyContentLinks div :last-child{
+    padding-right: 1rem;
+} */
+
+.body .bodyContent .bodyContentLinks div:last-child{
+    margin-right: 1.3rem;
+}
+
+.body .bodyContent .bodyContentLinks a{
+    display: block;
+    padding-top: 1rem;
+}
+
+.body .bodyContent .bodyContentLinks div{
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #999;
+    color: purple;
+    /* background-color: red; */
+    padding: 1rem;
+    transition: .7s;
+}
+
+.body .bodyContent .bodyContentLinks div:hover button{
+    border-radius: 50px;
+    transform: scale(1.2);
+}
+
+.body .bodyContent .bodyContentLinks div:hover{
+    transform: scale(.9);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.body .bodyContent .bodyContentLinks div img{
+    width: 100%;
+}
+
+.body .bodyContent .bodyContentLinks div a button{
+    border: none;
+    font-size: 1.2rem;
+    padding: .8rem 1rem;
+    background-color: purple;
+    color: white;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: left;
+    transition: .7s;
+}
